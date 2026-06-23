@@ -1,5 +1,5 @@
-import { defineConfig, presetAttributify } from 'unocss'
-import { presetWind4 } from '@unocss/preset-wind4'
+import { defineConfig, presetAttributify } from "unocss";
+import { presetWind4 } from "@unocss/preset-wind4";
 
 export default defineConfig({
   presets: [
@@ -16,4 +16,4 @@ export default defineConfig({
   theme: {
     // 主题覆盖
   },
-})
+});

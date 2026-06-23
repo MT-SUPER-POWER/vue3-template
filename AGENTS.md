@@ -2,14 +2,14 @@
 
 ## Tech Stack
 
-| Layer | Choice |
-|-------|--------|
-| Framework | **Vue 3** (Composition API, `<script setup>`) |
-| Language | **TypeScript** (strict mode) |
-| Build | **Vite 8** |
-| Styling | **UnoCSS** with `presetWind4` (Tailwind 4 compatible) + `presetAttributify` |
-| Lint | **ESLint** + **Prettier** (format on save) |
-| Package Manager | **Bun** |
+| Layer           | Choice                                                                      |
+| --------------- | --------------------------------------------------------------------------- |
+| Framework       | **Vue 3** (Composition API, `<script setup>`)                               |
+| Language        | **TypeScript** (strict mode)                                                |
+| Build           | **Vite 8**                                                                  |
+| Styling         | **UnoCSS** with `presetWind4` (Tailwind 4 compatible) + `presetAttributify` |
+| Lint            | **ESLint** + **Prettier** (format on save)                                  |
+| Package Manager | **Bun**                                                                     |
 
 ## Code Conventions
 
@@ -18,7 +18,7 @@
 ```vue
 <script setup lang="ts">
 // Composition API only. No Options API.
-import { ref, computed } from 'vue'
+import { ref, computed } from "vue"
 
 const props = defineProps<{ title: string }>()
 const emit = defineEmits<{ update: [value: string] }>()
