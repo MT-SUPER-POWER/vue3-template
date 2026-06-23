@@ -12,14 +12,16 @@ Modern Vue 3 starter template with **Composition API**, **TypeScript strict mode
 
 ## Tech Stack
 
-| Layer | Choice |
-|-------|--------|
-| Framework | **Vue 3** — Composition API, `<script setup lang="ts">` |
-| Language | **TypeScript** strict mode |
-| Build | **Vite 8** |
-| Styling | **UnoCSS** — `presetWind4` (Tailwind 4 compatible) + `presetAttributify` |
-| Lint | **ESLint** + **Prettier** (format on save) |
-| Package Manager | **Bun** |
+| Layer           | Choice                                                                   |
+| --------------- | ------------------------------------------------------------------------ |
+| Framework       | **Vue 3** — Composition API, `<script setup lang="ts">`                  |
+| Language        | **TypeScript** strict mode                                               |
+| Build           | **Vite 8**                                                               |
+| Styling         | **UnoCSS** — `presetWind4` (Tailwind 4 compatible) + `presetAttributify` |
+| Routing         | **Vue Router 4** — `createWebHistory`, lazy routes                      |
+| State           | **Pinia 3** — setup stores with composition API                         |
+| Lint            | **ESLint** + **Prettier** (format on save, semicolons enforced)          |
+| Package Manager | **Bun**                                                                  |
 
 ## Getting Started
 
@@ -90,12 +92,15 @@ This template is AI Agent ready. Both coding agents and humans have the tools th
 
 Installed from [skills.sh](https://skills.sh/) — the open agent skills ecosystem:
 
-| Skill | Source | Description |
-|-------|--------|-------------|
-| `vue` | [antfu/skills](https://skills.sh/antfu/skills) | Vue 3 conventions from Anthony Fu |
-| `vue-best-practices` | [hyf0/vue-skills](https://skills.sh/hyf0/vue-skills/vue-best-practices) | Production Vue 3 patterns (23K+ installs) |
-| `vue-debug-guides` | [hyf0/vue-skills](https://skills.sh/hyf0/vue-skills/vue-debug-guides) | Vue debugging guides |
-| `typescript-advanced-types` | [wshobson/agents](https://skills.sh/wshobson/agents/typescript-advanced-types) | TypeScript advanced patterns (49K+ installs) |
+| Skill                       | Source                                                                                   | Description                                     |
+| --------------------------- | ---------------------------------------------------------------------------------------- | ----------------------------------------------- |
+| `vue`                       | [antfu/skills](https://skills.sh/antfu/skills)                                           | Vue 3 conventions from Anthony Fu               |
+| `vue-best-practices`        | [hyf0/vue-skills](https://skills.sh/hyf0/vue-skills/vue-best-practices)                  | Production Vue 3 patterns (23K+ installs)       |
+| `vue-debug-guides`          | [hyf0/vue-skills](https://skills.sh/hyf0/vue-skills/vue-debug-guides)                    | Vue debugging guides                            |
+| `typescript-advanced-types` | [wshobson/agents](https://skills.sh/wshobson/agents/typescript-advanced-types)           | TypeScript advanced patterns (49K+ installs)    |
+| `frontend-design`           | [anthropics/skills](https://skills.sh/anthropics/skills)                                  | Distinctive visual design guidance              |
+| `ui-ux-pro-max`             | [nextlevelbuilder/ui-ux-pro-max-skill](https://github.com/nextlevelbuilder/ui-ux-pro-max-skill) | 50+ styles, 161 palettes, multi-stack design    |
+| `web-design-guidelines`     | [vercel-labs/agent-skills](https://skills.sh/vercel-labs/agent-skills)                   | Web accessibility & UX compliance review        |
 
 For OpenCode / Claude Code / Cursor / Codex users, these skills are available at `.agents/skills/`. Other agents can install them via:
 
@@ -111,11 +116,11 @@ npx skills add <owner/repo>@<skill-name>
 
 [`prompts/`](./prompts/) — reusable prompt templates for common tasks:
 
-| Template | Use Case |
-|----------|----------|
-| `new-component.md` | Create a new Vue 3 component |
-| `new-page.md` | Create a new page with routing |
-| `new-api-service.md` | Create API service functions |
+| Template             | Use Case                       |
+| -------------------- | ------------------------------ |
+| `new-component.md`   | Create a new Vue 3 component   |
+| `new-page.md`        | Create a new page with routing |
+| `new-api-service.md` | Create API service functions   |
 
 ### OpenCode Instructions
 
@@ -136,10 +141,10 @@ npx skills add <owner/repo>@<skill-name>
 
 ## Scripts Reference
 
-| Command | Description |
-|---------|-------------|
-| `bun run dev` | Start dev server with HMR |
-| `bun run build` | TypeScript check + Vite production build |
-| `bun run preview` | Preview production build |
-| `bun run lint` | Run ESLint across the project |
-| `bun run format` | Format all files with Prettier |
+| Command           | Description                              |
+| ----------------- | ---------------------------------------- |
+| `bun run dev`     | Start dev server with HMR                |
+| `bun run build`   | TypeScript check + Vite production build |
+| `bun run preview` | Preview production build                 |
+| `bun run lint`    | Run ESLint across the project            |
+| `bun run format`  | Format all files with Prettier           |
