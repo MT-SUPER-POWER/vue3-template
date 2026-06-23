@@ -13,6 +13,12 @@ export default [
   // base JS/TS rules
   js.configs.recommended,
   ...tseslint.configs.recommended,
+  {
+    files: ["**/*.{ts,tsx,vue}"],
+    rules: {
+      "no-undef": "off",
+    },
+  },
 
   // Vue 3
   ...pluginVue.configs["flat/recommended"],
